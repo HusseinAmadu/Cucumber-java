@@ -1,6 +1,7 @@
 package steps;
 
 import TestPage.testPage;
+
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,6 +9,8 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
 public class oopSteps extends testPage {
+
+
     @Given("user on login page")
     public void userOnLoginPage() {
         launchBrowser();
@@ -20,12 +23,13 @@ public class oopSteps extends testPage {
         driver.findElement(By.id("login-button")).click();
     }
 
+
     @Then("user must be navigated to the home page")
     public void userMustBeNavigatedToTheHomePage() {
         driver.findElement(By.className("shopping_cart_link")).isDisplayed();
 
     }
-    @After
+  @After
     public void quitbrowser(){
         driver.quit();
     }

@@ -1,6 +1,8 @@
 package steps;
 
 import TestPage.testPage;
+
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +10,7 @@ import org.openqa.selenium.By;
 
 public class MyStepdefs extends testPage {
 
-    @Given("user in a login page")
+
     @Given("user on lgin page")
     public void userOnLginPage() {
       launchBrowser();
